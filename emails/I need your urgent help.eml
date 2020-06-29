@@ -1,0 +1,110 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:3249:0:0:0:0:0 with SMTP id y9csp330781qta;
+        Wed, 10 Jun 2020 02:16:02 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJyM2oi0Irbi5kf2zakmpVijBMBEFPaDqoRlHPdqRDpKRRawjWlgkYyOkWws8m1ye+5JAKnK
+X-Received: by 2002:a62:a510:: with SMTP id v16mr1980152pfm.154.1591780561990;
+        Wed, 10 Jun 2020 02:16:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591780561; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KU2+bPGRkRkvOPcHvC5PdHTB/VvGVjKftTO69oiX2fuGbJy3L6fN6n/9jk6EmxmZNj
+         iJkR0C5nQFHPy+/Eck12TgfnlsSGTyl6o7az3LJI76q80yS/YxM687ZCA9i0Li9e+w7t
+         mhfKiTF5jhyBMC2QDI10jzTKAHdc01L2qH7irk8Jz1nTPm6saKFHEWM04vIEpzj0LqEX
+         MTqoHdb5gQZwj739a3bXdZfgY4L6T6QOWHrWr39flwkUVi81jlCjuKkE5o12hH5dDtBl
+         4p9h3AmQn3vAm2ogQhN9XSL0mW20gXeb010TJ4CI3wG8+Mms6+nJ9OReN72fqtln1Umb
+         CPZQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=references:content-transfer-encoding:mime-version:subject
+         :message-id:reply-to:from:date:dkim-signature;
+        bh=3riFxBTlS2YHr1st/Qk5nYPQrpXCuY5SpM28Ht6lejs=;
+        b=Afd26lEz27T4+LWH7KykRk9k7oldxlSjxiWbbc28gTr1MIBAxb7o6PVdMQbusdyW5B
+         BT+NfP2OSOg4luxNdMsiuty64y3DOIJnD0aP1zavTx5DmOWY3DG+tJiLJDfMG8/VUVA8
+         D8qfiB2dFWOJT8XNP9rtnPMiurC4e6zitxqQcdWuWrnGs4TQ2jE5ChLgSidJx+s2dEjw
+         yxw7sEpSv3Rsy4sNhvVlFZbGNKeRHBn9j+yZgSoFicmGQ38WZV/ZKZ8nOBc5R817byZg
+         e55DGjq8sB+G/ol0hxGa2RwEpNrh15LbFg5KJq4EJKaSLcPVP5OAS9qpXooBJZKVbwHv
+         VCrQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=gtdC50Z5;
+       spf=softfail (google.com: domain of transitioning benjaminsarah195@gmail.com does not designate 98.137.66.148 as permitted sender) smtp.mailfrom=benjaminsarah195@gmail.com;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <benjaminsarah195@gmail.com>
+Received: from sonic317-22.consmr.mail.gq1.yahoo.com (sonic317-22.consmr.mail.gq1.yahoo.com. [98.137.66.148])
+        by mx.google.com with ESMTPS id w7si8894914pfw.32.2020.06.10.02.16.01
+        for <harpuun1337@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 10 Jun 2020 02:16:01 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning benjaminsarah195@gmail.com does not designate 98.137.66.148 as permitted sender) client-ip=98.137.66.148;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=gtdC50Z5;
+       spf=softfail (google.com: domain of transitioning benjaminsarah195@gmail.com does not designate 98.137.66.148 as permitted sender) smtp.mailfrom=benjaminsarah195@gmail.com;
+       dmarc=fail (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1591780561; bh=3riFxBTlS2YHr1st/Qk5nYPQrpXCuY5SpM28Ht6lejs=; h=Date:From:Reply-To:Subject:References:From:Subject; b=gtdC50Z5MNMlWisV0/y3ifoHNdU34gtuQsnDfrjPiLGAEVMPjkpIJgxpsrn8iDzxFRD+fk9ZvCwlQSTtPgVWgyDQw/SgVbHazxccdF5UPZZ4mtLfML8kRy48DKqOJUWXiCLKjBedG+wqqdmcq8eHerwWvsiLquMtckCdlgI+m8CtHFJrweZrKhpgJr7fc89BT3RPiUGsIwJLCsQWBWNbS+l6ffAvmNJWajn6u8l68CWalruo0z1AccsgVHyuH9ME9wDU0iK0FV0deJfQd/XHnilN8WJVNq7YIJ2D6jbChT0VAEB9AgjnJFg/XpwXDvmj3hKzTGw8IaEWMxNG1Z/uYw==
+X-YMail-OSG: zMU1yN0VM1lE2l2RDNGzyZMCFoOjdLLgSrhvryEbA9hbN.Ug3FPg01pW0_pnxcR
+ vXu2VBvk7VsXOpOt_sTzui8VazLHwhkOkT0nSoOwMvGQstpJeLctG8VJToBlS3YB5ft25cBxb3EO
+ qgYYi8YxygvvophnAX0w_ZN7cp3wlOV4lAxguZEwI3FgVtrqo8f0W0yrZXxruL1FqPZRzryP.wAO
+ H7BMiNaSpBiy42tOGek0Rv8Up1HR35MyqBQ1YtRVdixtW5Grpwy8EyYRDTQd8gV4DTgdVpRFhJeF
+ NRpXDyl6bIov2rwdYhKbk7SRenwHvexxnhdL0cL7KarZ349qWqrR1Qb4_JWwF1tZKCxbSqt52XYe
+ SN_NXzKpWqNwSmMUqQzTU33Dkz0ATiOM90yECVYZ0_SKrxjMITCpuUXk2BHDoZiY7X2.sM9LFkH.
+ ken2i3.hQNTuZ5MBDZcrzdHbjiwReodIu8Xnnds6P..1y8d3k5H7tukt3ocN1nOz7EE_QR0dvYMC
+ obS_Y4HICB5rC6jV1avklBtDd2rW0wp2Ax_FykWp3EpBVqge3XELM4js0Zhi3cvDCy7qdVVc_tbq
+ NTrSfhS5qtt69LrASkz2NfphB8IVgr9riW343Fld.hAMm5nPncXxxXilWD6BUChaIGAa1DzSQvWt
+ mNPXCF_Tp3BrvHDNXtMj2O4kgYIQaQE9Pg4h8bQA9WbNE9sO0CRYcHxncqlS9VyK1ysT.in5QKkP
+ Kr.KO5HWaDriYE6hCH21Jg5Xc8LMdqkg36xHPidrtJB8fl6YyPk9v9GUqFhI.rI7xOJyMB.ieqqg
+ 85p8c6dAEL8HA_CAXp6GcAnWirlGNGJPjHUUyIf2AWwUAg_DG.Jg6Z9TfGXvXst2pvXzGibzI9yK
+ uEC.1LsZIi6XWWTNtChqUY.9Pm8u4VRtPrIwr2mz1ZrlXI3WJXWJ4QYDNxazh.I9HZEWQkoDvhkB
+ _PmssIfpkzQC23Sk97R4VB2j7w31jle4T6xhV_g7e.Hc_cWFjW62kBb.mum8usVvswXmDEg7WLAd
+ Y99MDavc_uU.CfFYdqeVJtcqKdQv_ZdeuiiHq34okZELoLz61i_YmIAeanKDrDar43NwXt3LWUaE
+ R7cK7oOFWd_ZbJsxgw5.VMsipEsL6hK7aJK56r411uSgY83eXYojtP_.ATeAh2ONJJE5lAUo3O8u
+ oFuaO1sV5qKXl2MKDwuGP8gugrw92G_DnVxK7lWwPRsX5QnmeIKFnUj94Bc8sRWTC_I9OEIig1MS
+ .HcBdQEsF465X5J6KtktFUl8X2b9d0fYbSUweHPFP7nBrfzah.F0SkC85uRGeDl3E9.ZRL2qztDK
+ F7Vc-
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic317.consmr.mail.gq1.yahoo.com with HTTP; Wed, 10 Jun 2020 09:16:01 +0000
+Date: Wed, 10 Jun 2020 09:15:56 +0000 (UTC)
+From:  Mrs sarah <benjaminsarah195@gmail.com>
+Reply-To: benjaminsarah195@gmail.com
+Message-ID: <1404043526.2160478.1591780556944@mail.yahoo.com>
+Subject: I need your urgent help
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+References: <1404043526.2160478.1591780556944.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.16072 YMailNodin Mozilla/5.0 (Windows NT 10.0; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36
+Content-Length: 1875
+
+
+
+
+
+My beloved, this is Mrs sarah benjamin, a citizen of France currently resid=
+ing in Ivory Coast. Please treat it as urgent and important as you read. I =
+write from the hospital where I was diagnosed with liver failure following =
+an intake of a poisonous substance maliciously given to me by my step mothe=
+r and her children since they want me dead. The reason why I contacted you =
+today is because I know that my step Mother wants me out of the way so they=
+ can expressly inherit my late father=E2=80=99s fortune which was passed to=
+ me before his demise.
+
+I have a little adopted child named Andrew whom I adopted in this Country w=
+hen my late Father was still alive. The total sum I inherited was $4 000.00=
+0 which is deposited in one of the banks here in C=C3=B4te d =E2=80=98Ivoir=
+e. My step mother and her children are after Andrew right now because they =
+found out that Andrew is now the beneficiary of the said fund.
+
+Dear beloved, please I want you to help him out of this country alongside t=
+he money for safety purposes. He is the only one I have and I don=E2=80=99t=
+ want to lose him for any reason.
+
+Please see below the disbursement of the said fund upon retrieval.
+
+1) My son Andrew gets 50% of the total sum upon graduation from high school=
+ with proven integrity and utmost sense of responsibility.
+(2) Give 20% of the money to handicap and charity organizations. The remain=
+ing 30% should be yours for the help of my son Andrew.
+
+Finally, I want to remind you that I need your urgent help as Andrew is 14 =
+years of age now, therefore guide him with every sense of humility that he =
+come of age and be a good citizen, as this is urgent if I don't hear from y=
+ou, I might be left with no other options than to seek for help elsewhere.
+
+May Almighty God bless you and use you to accomplish my wish. Pray for me a=
+lways.
+Mrs sarah benjamin,

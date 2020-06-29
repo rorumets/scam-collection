@@ -1,0 +1,88 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:3249:0:0:0:0:0 with SMTP id y9csp340447qta;
+        Tue, 9 Jun 2020 03:14:33 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJx5ddYLPmvaNaKpMpz+/JJNidDZlQyO+BIkfO5J0Hy9dOK3kIU/I/ol2kgJQygLCHP59iwF
+X-Received: by 2002:a05:6214:589:: with SMTP id bx9mr3123548qvb.127.1591697673324;
+        Tue, 09 Jun 2020 03:14:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591697673; cv=none;
+        d=google.com; s=arc-20160816;
+        b=H/nxGMKcTuv46wMSzeWzbNE8emIU5nIsV0ao6tm+TRLrIVb+yqCDGNl/1PYmwyA6II
+         aSqnW8FpABUrApASHCmSYQAGZ7a8nfa5JLkCFT1SZ35yXtAHm09aaz01HXmB65UMb9V7
+         hClI0F7oXBzxNVMvHB3vS5Qfc3ZM7JJIYFZDJoRydfcvla0QF3SJ1XN2QGlh5hDEVl11
+         PeTDP6ZaJ1KL+/IKMKsV8KbyRxB2Fw3ylvMVmX+4dBvtI2aooSksv8o9bwlW8qCnjkG/
+         nybGNPoLSJY9hvjqqRvRgSlDQB0HimTNrnKE5x/DNTRvNRwjEXWtsGYG95tM9fTmq6+u
+         WrMw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=thread-topic:thread-index:mime-version:subject:message-id:reply-to
+         :from:date:feedback-id:x_cmae_category:dkim-signature;
+        bh=ygq4ii0aNJ0U7hDTC0pX3IoxOLi61tnQHnZ/IVDsusE=;
+        b=VD421v2Ajen/IhJwGunyDNuY23dyBG79OEzQSdBd+m7OGg1gcFUUnJSQjZ3qsZ8K2A
+         xYg0If92Iyi0NDSQTjkg3s4cp7KFt8PZUtQArbyg2z0eP6XJeW3Vdswj2I2HPEgijG9h
+         GmkauJICkygTLRNoUkNAuxvq8QnRp/ja7mHuDgU03ZsdI7DacD1QEl2zZ4x96gEayxmE
+         SJTDq1E7h1fJcYooSSlno8hgAG9aPCedUzy2g5+xHTpWokJEjlLcq+29kA2LVTvL9tFE
+         cwyZgCTd2WYYJd869F7r2skKqygiuz3aEGv6bhGZX0uqP+zVHaLH3GbpkN2hZ9Jz5ITT
+         Ll3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@centurytel.net header.s=ctl201402 header.b=b4Z506qN;
+       spf=pass (google.com: domain of timsmyth@centurytel.net designates 206.152.134.67 as permitted sender) smtp.mailfrom=timsmyth@centurytel.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=centurytel.net
+Return-Path: <timsmyth@centurytel.net>
+Received: from smtp-fo.onyx.syn-alias.com (smtp-fo.onyx.syn-alias.com. [206.152.134.67])
+        by mx.google.com with ESMTPS id t15si6668751qkt.0.2020.06.09.03.14.32
+        for <harpuun1337@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 09 Jun 2020 03:14:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of timsmyth@centurytel.net designates 206.152.134.67 as permitted sender) client-ip=206.152.134.67;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@centurytel.net header.s=ctl201402 header.b=b4Z506qN;
+       spf=pass (google.com: domain of timsmyth@centurytel.net designates 206.152.134.67 as permitted sender) smtp.mailfrom=timsmyth@centurytel.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=centurytel.net
+Return-Path: <timsmyth@centurytel.net>
+DKIM-Signature: v=1; a=rsa-sha1; d=centurytel.net; s=ctl201402; c=relaxed/simple;
+	q=dns/txt; i=@centurytel.net; t=1591697671;
+	h=From:Subject:Date:To:MIME-Version:Content-Type;
+	bh=7DGWekb7R2q4v4oPUF50IiYNquI=;
+	b=b4Z506qNC67cug/pN8M5XTWRMLmKhxFW2xEHv3yd/bE+NE0MJYX+ZFVV6ths1kUG
+	RRDpSAkp+tWPJju0/OQE0nVhxn1GxpqVK+LUHIM24zT86BpbCx8GfyfmPzsvWyAp
+	/X0auVyMtc3YLDaOAEogvlys7baB1SwgcfzrolAta6HvtXwLDXJCzMOfoZqKInil
+	TJG/WjMRADOHPyp4d8cj+yDAReyuxOk2SfhmldIj94VBjChMagAibzK6mrsvT+F8
+	yUF3V4PbCQsXOivtEgu10VeZsBXJAzxp0fbP7hNbLAwzZL5aEdP2pBJQhbNJMpy0
+	GwrVCC+ju/CEZAIplY0N8g==;
+X_CMAE_Category: , ,
+X-CNFS-Analysis: v=2.3 cv=Ho0I5HbS c=1 sm=1 tr=0 a=Dvc6KKEWIqbem3oahLCHdg==:117 a=9cW_t1CCXrUA:10 a=KGjhK52YXX0A:10 a=FKkrIqjQGGEA:10 a=7-IX5d17ewUA:10 a=jyjBeKb17wAA:10 a=x7bEGLp0ZPQA:10 a=nTHF0DUjJn0A:10 a=u1X4jN9g9poA:10 a=puVM_0dwBpgA:10 a=eQrCS-SpgXYA:10 a=04Ao7X5uzhe2bX0Dd2EA:9 a=S-f7BkG8B_N6DdKy:21 a=6dLaR1FH4dsAOvyE:21 a=QEXdDO2ut3YA:10 a=_W_S_7VecoQA:10 a=oATTEbjf22XOhpBdtQF2:22 a=pHzHmUro8NiASowvMSCR:22 a=n87TN5wuljxrRezIQYnT:22
+X-CM-Score: 0
+X-Scanned-by: Cloudmark Authority Engine
+Feedback-ID: dfw:ctl:res:onyx
+X-Authed-Username: dGltc215dGhAY2VudHVyeXRlbC5uZXQ=
+Received: from [10.41.66.23] ([10.41.66.23:52140] helo=md19.onyx.dfw.sync.lan)
+	by smtp.centurylink.net (envelope-from <timsmyth@centurytel.net>)
+	(ecelerity 3.6.25.56547 r(Core:3.6.25.0)) with ESMTP
+	id 75/CC-25264-6016FDE5; Tue, 09 Jun 2020 06:14:30 -0400
+Date: Tue, 9 Jun 2020 06:14:30 -0400 (EDT)
+From: DAVID PAUL <timsmyth@centurytel.net>
+Reply-To: DAVID PAUL <Danm44633@gmail.com>
+Message-ID: <105402749.4393488.1591697670469.JavaMail.zimbra@centurytel.net>
+Subject: Attention
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="=_5eedf033-fe88-453e-8d41-74c0a8751e7c"
+X-Originating-IP: [196.53.10.204]
+X-Mailer: Zimbra 8.7.6_GA_1776 (ZimbraWebClient - GC83 (Win)/8.7.6_GA_1776)
+Thread-Index: nbodqV26jg807zwfsCGFMz8ilQnt4Q==
+Thread-Topic: Attention
+
+--=_5eedf033-fe88-453e-8d41-74c0a8751e7c
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+
+-- 
+Attention,this is Nicole Jones from Standard Chartered Bank,this is to notify you about your fund which is in our custody.We are instructed to set up an online bank account for you with your name and credit your total fund in it and release the online banking access to you to login and make your transfer by yourself to your preferred bank account . thank you 
+
+--=_5eedf033-fe88-453e-8d41-74c0a8751e7c
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html><body><div style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000"><div><br></div><div><br></div><div data-marker="__SIG_POST__">-- <br></div><div>Attention,this is Nicole Jones from Standard Chartered Bank,this is to notify you about your fund which is in our custody.We are instructed to set up an online bank account for you with your name and credit your total fund in it and release the online banking access to you to login and make your transfer by yourself to your preferred bank account . thank you<br></div></div></body></html>
+--=_5eedf033-fe88-453e-8d41-74c0a8751e7c--

@@ -1,0 +1,80 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:3249:0:0:0:0:0 with SMTP id y9csp86340qta;
+        Tue, 9 Jun 2020 18:19:25 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzJLzz7Lx08P/FtLSz6zBRru+AFNhduzQX8rCHA0kdNRthYg72VWXIUszGMnTE7figVDAgJ
+X-Received: by 2002:a7b:c0cc:: with SMTP id s12mr674032wmh.111.1591751965145;
+        Tue, 09 Jun 2020 18:19:25 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591751965; cv=none;
+        d=google.com; s=arc-20160816;
+        b=gB3SfPq/pQahBk0tNNQXqweC9y1UBiLYRWhGKbeEGXUNtCwJrAiiG0GGMXz3GQ2CfK
+         UnXWtlK1qEw+GJ0t+/VsHeWnKku2e+KoT2+Bk9Cc3LNTKKTAFfNPbETQfLgIp03tY2/i
+         WYy/H8Pg7OoHctzw5fBKm46JQWryk/ujW5cGhiOEGMXpcTYlSkm+Honph7QaRaKrvfkQ
+         rVdO/gPGpG+Un/sGrxyUYvs0yZpfI2dL11/1LQbX7k0tC2VHNN2tTelbCyPp5Onz0Pcb
+         P9QZsaDtYgLMoQe7qwQMz5O44iTqQIxtL9S9YXrskcjphvW5RYtbtTCCAA78TMbqRMQd
+         4VUw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:date:subject:from:reply-to
+         :ironport-sdr:message-id;
+        bh=xownwOF2ZGhwqwGztckGmuFVLIpfS5j3Qbc4v6JR6qQ=;
+        b=UTDU7xNnuWCIoUHiDMM3qU5S9fY8Yh0DoU43VvBaee7gwcmgjnLEX1BFiU8mz6ug+q
+         gsBKtFfC7rdzp/AdNwFves51NYTQyoTPMH/fI8ZMjdKZwocG8rAXM5NUBFkjGg6PBNX2
+         pdnEW3vVpIm+5BGJ1+++f71uHqBtRb97LBopXyBX4Q23qfUmVfo3RxaBeodmqTphJfVE
+         +taWUOrG8qYtR37iZxOIJH1qgAc0V19R9O4CeBzCt7iQFSfmK6zTxDv2pGvhxXYImQey
+         Ta8LtA8RJ4RFigEAt5+FtEOKr67mNSBEPH/qXIGLReOt7qO2/R0IVjkT1QAA2f+Vzozo
+         KQlQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 197.248.255.8 is neither permitted nor denied by best guess record for domain of info@saga-cci.or.jp) smtp.mailfrom=info@saga-cci.or.jp
+Return-Path: <info@saga-cci.or.jp>
+Received: from mxout.safaricombusiness.co.ke (mxout.safaricombusiness.co.ke. [197.248.255.8])
+        by mx.google.com with ESMTP id g1si4491202wrw.555.2020.06.09.18.19.23;
+        Tue, 09 Jun 2020 18:19:25 -0700 (PDT)
+Received-SPF: neutral (google.com: 197.248.255.8 is neither permitted nor denied by best guess record for domain of info@saga-cci.or.jp) client-ip=197.248.255.8;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 197.248.255.8 is neither permitted nor denied by best guess record for domain of info@saga-cci.or.jp) smtp.mailfrom=info@saga-cci.or.jp
+Message-Id: <5b4fa6$348if5@mxout.safaricombusiness.co.ke>
+IronPort-SDR: xpRAQZzOOi03DTN2gaW+vGOOPvSth53kP/7UQOF24lb7sDmmEmysheqBsSMWvkpbQm0nDa6xhR
+ KMG/l84Jm8NA/VcBjPslneLvQC7AA9xFC1oRbU9xEKpRz3sXhzU2pgDbq8S6tIz3DItxzzHn9/
+ Z+Z0DKIJvRNtcoelhxAvEQNWRU96YCYLW28gubjdj5wyi64rX0CYpJZrNmqPR5Lc18k+xH2IQI
+ 8uYnuyM+t71Zpd9YQZcDHtcaGQIELz+KfScOf9lWsIpDKMJQB0dCOyHfL5JVBync/plIRbqv6b
+ nGQ=
+X-IronPort-AV: E=Sophos;i="5.73,493,1583182800"; 
+   d="scan'208,217";a="105138661"
+Received: from unknown (HELO User) ([211.110.44.58])
+  by mxout.safaricombusiness.co.ke with SMTP; 09 Jun 2020 23:38:25 +0300
+Reply-To: <drsaleefsaleemah@gmail.com>
+From: "Dr Ahmed Saleef Saleem"<info@saga-cci.or.jp>
+Subject: I await your response
+Date: Tue, 9 Jun 2020 13:39:40 -0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1251"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+<HTML><HEAD><TITLE></TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF leftmargin=5 topmargin=5 rightmargin=5 bottommargin=5>
+<FONT size=2 color=#000000 face="Arial">
+<DIV>
+Good day Sir,</DIV>
+<DIV>
+&nbsp;</DIV>
+<DIV>
+I am&nbsp; Dr&nbsp; Ahmed Saleef Saleem, a citizen of Qatar,residing here&nbsp; in Dubai U&nbsp; A&nbsp; E ,&nbsp; Am contacting you regarding a project I&nbsp; wish to execute with you. I&nbsp; will send you a comprehensive report once I&nbsp; receive your response with your&nbsp; full name ,address,occupation&nbsp; and direct phone number .</DIV>
+<DIV>
+&nbsp;</DIV>
+<DIV>
+I await your kind and cordial&nbsp; response .</DIV>
+<DIV>
+&nbsp;</DIV>
+<DIV>
+Regards,</DIV>
+<DIV>
+Dr Ahmed Saleef Saleem </DIV>
+<DIV>
+Email: drsaleefsaleemah@gmail.com</DIV>
+</FONT>
+</BODY></HTML>

@@ -1,0 +1,80 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:3249:0:0:0:0:0 with SMTP id y9csp99832qta;
+        Tue, 9 Jun 2020 18:46:18 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxBWDRkQbaL6tNTOP45z87E07ageg32fZt+P6gsTKta5uN3LXQiU1y+NVz85LOr9WRFw6zm
+X-Received: by 2002:a63:7412:: with SMTP id p18mr751660pgc.308.1591753578694;
+        Tue, 09 Jun 2020 18:46:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1591753578; cv=none;
+        d=google.com; s=arc-20160816;
+        b=EWhzOfDlcrY19OpyaYbugEDNQmHFmero9IPELzCSUaf3F+2K1KIogHPCnLEF2Lqwxt
+         yMiTpUHQ2lpceqkhNIyHgvnDwEujFkZxZII1xW4CdAAz2zo3O6JvMdTbdZ45iB51+5dF
+         11L5dzJnU52xAaXjMAGvvjZNl8AXw5hDc5n+PJ5bFqBK4VnnoUwbqdZ4pekXd0Xql3/6
+         z1VpvWXHg22KapNFDRR564l50mG45ii6m5Vkjv3yghD3UwrdbOPsfzfVfXLVxzorKMY5
+         X11CI+piEY5fVC+t8Zdwm+YPEAx3kRT5y/IbFzBd7oSAmMmjX3u4ZFGasKhsLPYhy/mf
+         iqXQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:reply-to:date:from:to:subject:content-description
+         :content-transfer-encoding:mime-version:dkim-signature;
+        bh=tZj4lUin86KagKkbtNnmMLl9QmeQ/Fc0Vnx7AVbIYWw=;
+        b=Ntb17XsdD/KZY54d6VRmhFwbFpwFd+Vd9D+LYq7CIUGan2nuSq8OgblSzeJknsLdiD
+         kVDCEjT4/iOxT3mxW5zuFPId61j9RO8Ii4YUpKYtcR0z29zLm8nxiRX2ygaQMyKN8uQy
+         HQcYzyhafTX6vTs4CghzG73+vIiwx/ml6xc02kKf7Q1AGOi4rRPhcgQyNDZGoNoqJeo6
+         RtSla/nT9Tu4rGo+UWH3KWrx3a2PkehSrVAaVwe2bdbRLwwpykgf/4Ypk3MLyxDe/rLa
+         ukTBD8yzmGlQ8LYSgIUr6UOIOJJURATzmDgzA6S4gI4eYh3fgm7nmmpc/FhQ0ESxSONy
+         AggA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=AbPOXmhk;
+       spf=pass (google.com: domain of bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net designates 50.31.41.15 as permitted sender) smtp.mailfrom="bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net"
+Return-Path: <bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net>
+Received: from o50314115.outbound-mail.sendgrid.net (o50314115.outbound-mail.sendgrid.net. [50.31.41.15])
+        by mx.google.com with ESMTPS id j7si2850479pjw.167.2020.06.09.18.46.17
+        for <harpuun1337@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 09 Jun 2020 18:46:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net designates 50.31.41.15 as permitted sender) client-ip=50.31.41.15;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@sendgrid.net header.s=smtpapi header.b=AbPOXmhk;
+       spf=pass (google.com: domain of bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net designates 50.31.41.15 as permitted sender) smtp.mailfrom="bounces+1765399-8ce1-harpuun1337=gmail.com@sendgrid.net"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net; 
+	h=content-type:mime-version:content-transfer-encoding:content-description:subject:to:from:reply-to:x-feedback-id; 
+	s=smtpapi; bh=tZj4lUin86KagKkbtNnmMLl9QmeQ/Fc0Vnx7AVbIYWw=; b=Ab
+	POXmhkz1YoCInJ1ogcBN5t3IRWlRdXMIJ2GCIwYUnxRMm2Id4rocpupOKtJWMSi+
+	iYYkWvSPghQTVf/hbVxnea1TRSE0DFP5+P1R03YXe/0mmr0X76bqVshM1by3fRRM
+	5MxFsmR540tndmdgdY6zIIqaNuJNyUzzrToAuHzjc=
+Received: by filterdrecv-p3iad2-784dbb6bd8-z6chg with SMTP id filterdrecv-p3iad2-784dbb6bd8-z6chg-19-5EE03108-26
+        2020-06-10 01:02:00.251616402 +0000 UTC m=+536111.284864580
+Received: from DESKTOP-D07PHSV.www.huaweimobilewifi.com (unknown)
+	by geopod-ismtpd-3-2 (SG) with ESMTP id PityPtFPTWW4RSVBmHdRug
+	Wed, 10 Jun 2020 01:02:00.015 +0000 (UTC)
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+Subject: Your response is needed.
+To: Recipients <em4953.serviceannuelle.org>
+From: "ANTHONY NUGAN" <em4953.serviceannuelle.org>
+Date: Wed, 10 Jun 2020 01:02:00 +0000 (UTC)
+Reply-To: nugadvokatur@mail.com
+X-Priority: 1 (High)
+X-Antivirus: AVG (VPS 200609-10, 09/06/2020), Outbound message
+X-Antivirus-Status: Clean
+Message-ID: <PityPtFPTWW4RSVBmHdRug@geopod-ismtpd-3-2>
+X-SG-EID: Hm4jSMviR80G8u5evhfzghDxRfvTgUSz7dBaqiny+i+DBG9ylzD+HlsfrbppOVQad6QpQXEoxptjpz
+ pwoAZC+rmTucNaLGcfnzM3DKTg+Qt/KHF0KePJQIY4f94nCGhx4ZMfeJN2RAX/7UqvocxPse55cNK5
+ LtI5zpWIskZrvt020vU1/idCqZr7IXUWWiU/k/5SEwq0RJNKnHY76hwiQgo8FytkEGZiJ7JEKrsOc8
+ Ic5ScEsxGrQGXpt1kgge6k
+X-Feedback-ID: 1765399:2xPe33ZPHXDowwObX5faMQQlfgB/VOiUU4/tpXWtyeY=:2xPe33ZPHXDowwObX5faMQQlfgB/VOiUU4/tpXWtyeY=:SG
+
+Hello friend, I hope this email meets you in good health. I am an investmen=
+t counselor, leading a law firm. And I have a business proposal which I wou=
+ld like to discuss with you. If you are interested, please communicate with=
+ me immediately. Upon your response, I shall then supply you with more deta=
+ils. I anticipate your reply.
+
+Best regards,
+Anthony Nugan.
+
+--
+This email has been checked for viruses by AVG.
+https://www.avg.com
+

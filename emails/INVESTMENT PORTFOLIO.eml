@@ -1,0 +1,202 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:3249:0:0:0:0:0 with SMTP id y9csp819451qta;
+        Tue, 9 Jun 2020 14:13:12 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzaSSheaO9kzInIAxlr6vjGFjE9Rii3ZqmMUwIzJMLzA+YALj6KwitAg+EYbJ0eDpZ3YwWL
+X-Received: by 2002:a05:6000:12c4:: with SMTP id l4mr6850868wrx.128.1591737192057;
+        Tue, 09 Jun 2020 14:13:12 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1591737192; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=B2FDGu3Hoj47WziTiusSWLWQrSvc42jv9iYnB3jQeE/yvK8O6w3bFmMsFWthSwxNB5
+         XxsAFdFCOia8yLbQ9IQGN9zFh+kIZQ/FGLz6qqQwiZxf0Yvcn4QNXqiIARTgSacpjZ18
+         kG3JeU95TK4iHeQyzPN8qZXG9YHL7+Kj2907HLdUQSicVqBkuSdnqVfzhfsTz+gx24FD
+         vOEV3d1GuTRy7SbwBHvZ6nySyZdqNT9Pt8shysvvfeCCygOEkNr8Vr9TRsIME4+NUFMV
+         1lv1XsZRuvYRqBh4uD8kd6cAtijjNEI1XkiiEpc3EQOsdEphlFD2VfcuhsQemDKG2KCq
+         I33A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:from:dkim-signature;
+        bh=S7J2tDCFi58E9fcaBzmWfby3xgoDUyW/H2KR7P68PvI=;
+        b=RZ/pPKJAUyiqGRILzoUmhuiYt2wQM2iUGgh9OflcXwAR/e3urrSGfv38VVjCMdA1ey
+         LuVkwffwnlORiFH5j37M2MSpb4y5K8Zlbjq5JlEI/cQE2XVmW3J7OoAhkKARk63ogb/Z
+         YoVP+9ZBpUuADKK1HHO0UjyxqRunSapgOZw1BagCpa9mJbeVUCoUFerbPQptbkPVce3P
+         oOvZ0rgTV4km54IGHneCiH+dBocCF4ZKVjnvLIXDFFNr2bGojlq8l0uTCi8vX348qf6S
+         0X2uslz80P0tx4wSNNtl1bUjuesS76bOZ+MuprGlrtwwGKi89N2lM1cv0hcYKYZxCPjF
+         pFtw==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@outlook.com header.s=selector1 header.b=uWuGi8Rn;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of clementnkuhlu86@outlook.com designates 40.92.74.53 as permitted sender) smtp.mailfrom=clementnkuhlu86@outlook.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com
+Return-Path: <clementnkuhlu86@outlook.com>
+Received: from EUR04-DB3-obe.outbound.protection.outlook.com (mail-oln040092074053.outbound.protection.outlook.com. [40.92.74.53])
+        by mx.google.com with ESMTPS id v7si4180863wrs.369.2020.06.09.14.12.48
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 09 Jun 2020 14:13:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of clementnkuhlu86@outlook.com designates 40.92.74.53 as permitted sender) client-ip=40.92.74.53;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@outlook.com header.s=selector1 header.b=uWuGi8Rn;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of clementnkuhlu86@outlook.com designates 40.92.74.53 as permitted sender) smtp.mailfrom=clementnkuhlu86@outlook.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=outlook.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=itcPu82guS0aOngWsSuXwaTIxiUkraxroO2bNtJEIR4n25H7mUG3lkMY7BfAt7SVqlooAzTZlUhECvdeYF8DQbre3VVpeEqcFtByhdXCzK+uB9opX5GcW1+Nl98CCOkLI0yBRYzFvdx1it0pgA8rgWJ+yh55UBSdiydexei2cJwLbcxBXf7IG64gWEb9vIgY2WzLqqVyiRLjAAinXvq0OzQOlpSPEcikzoyKyCNhfIWqZytGpj0nvnx4hXQ/c7ErO+cm+ObEX9G1bTZQsT1YRIThUEpKaTIyvAiCf6nurcytHr+2sXtQQw2indoZf2lkBXvt/oclouYNhVBBduzaJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=S7J2tDCFi58E9fcaBzmWfby3xgoDUyW/H2KR7P68PvI=;
+ b=QYKY1zii/YM6tq/1d4AUUwvVHlVzXq0aFCFYeO618sw1LXXO0X3P0QIk1NrgnSqOqD2aNcCln4varSzGQdxGpvosghM1iMy/NbmBCqfa2fUBpd3DIBLO2D4lzcptUqnbmCaAuHzuyTwg7GH+gHl/gFRJARz2cfpWhaoVp3h1Nzmuav9xk8L/DuvwhhxM2BKH8Nj9Cy4um90cuOwFu3LBp+qO7cmVxVohc9SEvH9+Oz90AItzFpN5RUbp2S2yf79L/a96EER0rkhnHd+XmZb39ANdck1bWtYQhk0LYFIwwxNEf8E4nmjG5cydcj4BElFEZoFzDBIUTXAHMJbnJyD+SQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=S7J2tDCFi58E9fcaBzmWfby3xgoDUyW/H2KR7P68PvI=;
+ b=uWuGi8RnvEkWN/4d5gS+04x/N4XfTZKpdEssKXacVPVBm3rE+SD6mbsHodKkOEKo4e53lKtYM9yS90du9SJwGRJupzxTIJdhG2sLq7nktSAsdK85ELbd8Ik6HZHmMn3DTmCwqXjemzggogpZsJ5vI+IjY3c1h5L7m1cTmzBTF3us1XDlILA96ederRDzwUZw84ARrUDjMi6E+jsZgtkPqoPWgcwQsh2H+Xrnrb3j3+QV+tfd4FSqv2HWPqsokUJtZaDy6f8stDpfUVF0Dq6P+odtJWznw0ZnbFoUVa+2IekwOlnVnE1x87AWEYWPcBCgSfpAMgFLgfNjga+Fs09imA==
+Received: from VI1EUR04FT041.eop-eur04.prod.protection.outlook.com
+ (2a01:111:e400:7e0e::47) by
+ VI1EUR04HT103.eop-eur04.prod.protection.outlook.com (2a01:111:e400:7e0e::407)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3066.18; Tue, 9 Jun
+ 2020 21:12:33 +0000
+Received: from CWLP123MB1713.GBRP123.PROD.OUTLOOK.COM (2a01:111:e400:7e0e::52)
+ by VI1EUR04FT041.mail.protection.outlook.com (2a01:111:e400:7e0e::346) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3066.18 via Frontend
+ Transport; Tue, 9 Jun 2020 21:12:32 +0000
+Received: from CWLP123MB1713.GBRP123.PROD.OUTLOOK.COM
+ ([fe80::8072:e4d8:e029:b994]) by CWLP123MB1713.GBRP123.PROD.OUTLOOK.COM
+ ([fe80::8072:e4d8:e029:b994%4]) with mapi id 15.20.3066.023; Tue, 9 Jun 2020
+ 21:12:32 +0000
+From: CLEMENT NKUHLU <clementnkuhlu86@outlook.com>
+Subject: INVESTMENT PORTFOLIO
+Thread-Topic: INVESTMENT PORTFOLIO
+Thread-Index: AQHWPqICmSWtaNlkb0iZwM5WxoVDQA==
+Date: Tue, 9 Jun 2020 21:12:32 +0000
+Message-ID:
+ <CWLP123MB1713734A669873448E8D4D47AB820@CWLP123MB1713.GBRP123.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker:
+ OriginalChecksum:343D8BB45CF8ED17EAF371AF0DBA0D5B095FAF62E3D745EC295934A86320117E;UpperCasedChecksum:04AF5906A44CB401CDA9869EDF5AB0DCAB24857004B0EE81813555051FB256AB;SizeAsReceived:31898;Count:41
+x-tmn: [tNEaAf4/fSXeonFgAZpOhtAbva2vHA6T]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 41
+x-eopattributedmessage: 0
+x-ms-office365-filtering-correlation-id: 6f7dbc6d-bd0f-44d4-884f-08d80cb9d361
+x-ms-exchange-slblob-mailprops:
+ 2M8YL5ykv7Y9eINSv9gFIOdIOyfzCxKknCb8jibgiBATZNGqkp+GRFDAhnGhgXM2mMBdSbnmjTdtuEM9Cg24/gfs+PBakjoZWcCcNcbdb+/KHB10vt5/8IGdwyeSSv/ss5p5jSMc4o4xXa+LMf5FP6ARzpkQYT8ZZWhUQ9W7oea7PT2QQ4bwY7LucdJFjCKgCsOkhag303a/0GXBDdjy6QSHq7yumYtMEH1H+JyYPfwzLNI3xuewLXqHXdEtanovr5OmLZF9TGmlcMT6viCalwhE7a3Yc8n/IUORh2D7eQCHTTFclwK/Z75uRz/qiWDS0dhYYg6VP2hNIsoEjsycTH9vLvqcJTu6XHWYY2vXXyqYQKt1fX49jy3iJWLlRU1POL4ev6YGP3N4D9XRVBULxS3JNvMBb/baJFROn7rylwmu3sr0y+19uxkFL+XF1+Ulm958E1JlOY8UEM4rx4/WhKSFoxsKDlQCJwEeQhBXJOPDQvcGrc4xCIwu7Z7sw/PjC6emCpf11YFAmzyw5dfzCnvtn0PenwMaupw5PE/6L22m0VT5tih8lkvHSD0eMymu/Z3ktNlBqROPGC0544f80pyNhihO2hZkiENBT0EghNQK2J6XmQB5DMdCSNTnZKbUaULjO7z3xU8=
+x-ms-traffictypediagnostic: VI1EUR04HT103:
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ Bf7cLCLW7iOLuCVvC1EX/I19nZhImBZUCiiNq5xdf60/dZaH8d5dvBH+J8iAaQ1Cp3qShT75IYD77o2ReDMnGYSdAzcyeFLgLnouHaybNxlg7zKdFJUte+eVsSe3psBNCg8sTigymcpXhwljsfqPrX0enorlZK73WuFAFgarAsT5JhVKikPsiSD8tXsWTMiNnZCIam0jaj08ilK+K++OJA==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:0;SRV:;IPV:NLI;SFV:NSPM;H:CWLP123MB1713.GBRP123.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFTY:;SFS:;DIR:OUT;SFP:1901;
+x-ms-exchange-antispam-messagedata:
+ c7Ii6tBhPKmZkXBNJV/+0qSeDt8mAw4fEUHCJQyuXwOAS7KaW3phoOdaFX1myOtYh7hy1et6jW9HKX2JXgcVKnMFudzuF8uMsWnwSY8+2GeD1aN8v+sJv+k4RpZE3wy+NZQ5i+1l+9qkF3TBvbRVqA==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_CWLP123MB1713734A669873448E8D4D47AB820CWLP123MB1713GBRP_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6f7dbc6d-bd0f-44d4-884f-08d80cb9d361
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-originalarrivaltime: 09 Jun 2020 21:12:32.4774
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1EUR04HT103
+
+--_000_CWLP123MB1713734A669873448E8D4D47AB820CWLP123MB1713GBRP_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+My Dear Friend,
+
+INVESTMENT PARTNERSHIP WITH HILLROCK INTERNATIONAL INVESTMENTS AND LOAN OFF=
+ER BETWEEN US$20  MILLION TO US$7 BILLION NEEDED URGENTLY,
+However I am Soliciting On-Behalf of my private client who is interested in
+having a serious business investment in your country. If you have a
+valid business, investment or project you can invest, get back to me for
+more details via my private email address below
+Your swift response is highly needed.
+
+Regards
+Investment Analyst
+Mr.CLEMENT NKUHLU
+Email;clementnkuhlu@gmail.com
+Email;clementnkuhlu@hillrockinv.com
+
+
+
+
+
+
+
+
+--_000_CWLP123MB1713734A669873448E8D4D47AB820CWLP123MB1713GBRP_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<span>My Dear Friend,<br>
+</span>
+<div><br>
+</div>
+<div>INVESTMENT PARTNERSHIP WITH HILLROCK INTERNATIONAL INVESTMENTS AND LOA=
+N OFFER BETWEEN US$20 &nbsp;MILLION TO US$7 BILLION NEEDED URGENTLY,<br>
+</div>
+<div>However I am Soliciting On-Behalf of my private client who is interest=
+ed in<br>
+</div>
+<div>having a serious business investment in your country. If you have a<br=
+>
+</div>
+<div>valid business, investment or project you can invest, get back to me f=
+or<br>
+</div>
+<div>more details via my private email address below<br>
+</div>
+<div>Your swift response is highly needed.<br>
+</div>
+<div><br>
+</div>
+<div>Regards<br>
+</div>
+<div>Investment Analyst<br>
+</div>
+<div>Mr.CLEMENT NKUHLU<br>
+</div>
+<div>Email;clementnkuhlu@gmail.com<br>
+</div>
+<div>Email;clementnkuhlu@hillrockinv.com<br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div><br>
+</div>
+<span></span><br>
+</div>
+</body>
+</html>
+
+--_000_CWLP123MB1713734A669873448E8D4D47AB820CWLP123MB1713GBRP_--
