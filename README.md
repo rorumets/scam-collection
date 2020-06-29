@@ -1,2 +1,2 @@
 # scam-emails
-collection of scam emails for research purposes
+collection of scam emails and messages for research purposes
