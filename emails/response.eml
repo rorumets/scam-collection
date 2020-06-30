@@ -1,0 +1,70 @@
+Delivered-To: kristjan.karmo@gmail.com
+Received: by 10.220.96.83 with SMTP id g19csp139807vcn;
+        Tue, 5 Aug 2014 00:10:49 -0700 (PDT)
+X-Received: by 10.112.42.201 with SMTP id q9mr1851304lbl.8.1407222648535;
+        Tue, 05 Aug 2014 00:10:48 -0700 (PDT)
+Return-Path: <kozmoz@juhe.ee>
+Received: from a13.virtuaal.com (a13.virtuaal.com. [195.222.15.85])
+        by mx.google.com with ESMTPS id td2si2488564lbb.47.2014.08.05.00.10.48
+        for <kristjan.karmo@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 Aug 2014 00:10:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kozmoz@juhe.ee designates 195.222.15.85 as permitted sender) client-ip=195.222.15.85;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of kozmoz@juhe.ee designates 195.222.15.85 as permitted sender) smtp.mail=kozmoz@juhe.ee;
+       dkim=pass header.i=@juhe.ee
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=juhe.ee; s=default;
+	h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:To:From:Message-ID; bh=o+pFQ4H55CKCZq8hZCM9QAxNCpYeJPACkU6nh7SeJWg=;
+	b=ey7+JC+xpXFWrSfHZb5y6LP4i1H3lhlPlyXw9LQn1bVU8vUrTCElugIy80zzx+OMfbiJXGdCvMcier8GFvUEG1YpKU/NwfCyeCjqg0XVSEWnoO61atcq6XQN+dAdaaGHkm4XAnIE24zxbcerP46hqKEItgrhgLHRWUEDDUdCPgg=;
+Received: from [203.147.43.189] (port=45438)
+	by a13.virtuaal.com with esmtp (Exim 4.82)
+	(envelope-from <kozmoz@juhe.ee>)
+	id 1XEYsu-0001y0-AR
+	for kozmoz@juhe.ee; Tue, 05 Aug 2014 10:10:13 +0300
+Message-ID: <D447B18CE9227AD447B18CE9227AD447@FSIG4TYFSIG>
+From: <kozmoz@juhe.ee>
+To: <kozmoz@juhe.ee>
+Subject: response 
+Date: 5 Aug 2014 19:45:10 +0600
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="cp-850"
+Content-Transfer-Encoding: 8bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5931
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5994
+X-Virtuaalcom-MailScanner-Information: Please contact the ISP for more information
+X-Virtuaalcom-MailScanner-ID: 1XEYsu-0001y0-AR
+X-Virtuaalcom-MailScanner: Found to be clean
+X-Virtuaalcom-MailScanner-SpamCheck: not spam (whitelisted),
+	SpamAssassin (not cached, score=15.464, required 4, BAYES_99 5.00,
+	BAYES_999 0.20, DATE_IN_FUTURE_06_12 1.95, DOS_OE_TO_MX 2.52,
+	RCVD_IN_BL_SPAMCOP_NET 1.35, RCVD_IN_XBL 0.38, RDNS_NONE 0.79,
+	SPF_NEUTRAL 0.78, URIBL_DBL_SPAM 2.50)
+X-Virtuaalcom-MailScanner-From: kozmoz@juhe.ee
+X-Spam-Status: No
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - a13.virtuaal.com
+X-AntiAbuse: Original Domain - juhe.ee
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - juhe.ee
+X-Get-Message-Sender-Via: a13.virtuaal.com: redirect/forwarder owner garf@juhe.ee -> kristjan.karmo@gmail.com
+
+Good day!
+
+We considered your resume to be very attractive and we thought the vacant position in our company could be interesting for you.
+
+Our firm specializes in consultation services in the matter of bookkeeping and business administration.
+We cooperate with different countries and currently we have many clients in Europe.
+Due to this fact, we need to increase the number of our destination representatives' regular staff.
+
+In their duties will be included the document and payment control of our clients. 
+Part-time and full-time employment are both currently important.
+We offer a flat wage from 800 EUR up to 3,000 EUR per month.
+
+If you are interested in our offer, mail to us your answer on reynolds@europsjob.com and we will send you an extensive information as soon as possible.
+
+Respectively submitted
+Personnel department
+
