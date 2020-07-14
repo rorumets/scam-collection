@@ -1,0 +1,214 @@
+Delivered-To: harpuun1337@gmail.com
+Received: by 2002:ac8:6bce:0:0:0:0:0 with SMTP id b14csp2747513qtt;
+        Mon, 13 Jul 2020 07:38:04 -0700 (PDT)
+X-Received: by 2002:a17:906:a242:: with SMTP id bi2mr64484ejb.243.1594651084214;
+        Mon, 13 Jul 2020 07:38:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1594651084; cv=none;
+        d=google.com; s=arc-20160816;
+        b=BVQoYQhbpU3sRwspd6yqN6XOB3obS+YM+ELSu13oeeIrDXfuduChDA7XQBI0Ik9OGP
+         Hbw+g44qoRKkEwexj0eCvFwSWuECABATJXck11r7sj4bhffFYBAA23jaVzSdD5CshrTd
+         84w6kEngoOrmDdmqVgIIHF3z774TfJKAiKoqwl0BSh3N1JrA2Q7lwBrQZvDbUwNRf+ey
+         i4SH5pB2ddVJW4vnAYYOe90Zyg/YeOuVGqTAg+y/KmsXRmUio5yy5XmaM3NG4OvjCQWq
+         alMbIaFluDp/kc+4twpEoL1W0G8Rrx7ef93DfI1mv1p8A1NBYeUxMXwPGezx+AHFTx8f
+         uFgQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:references:in-reply-to:mime-version
+         :dkim-signature;
+        bh=onauiznV4EVDwp5kwjTEaV1+iwL5vMaMogy/HsLcNkk=;
+        b=E0y1mZzeHosON3226yjqfLeQvcWcxMLxOqrBuTHuRkAcBq/nh7r914nMXmxM2I+6hn
+         yJYzt+kdv6HiGhSi1WkUouJbcK/L4ULG+Lw5gWQJbU0ZERxDC7ieHkZrjyKxCTkORVUQ
+         YTTQzgU6jEYvqZ69TzUatbAQo2uT0B7F6Bzs73c38QzVzVUlidtFp2G5lHsZwvjHcLkG
+         psC13Hxr02HVA+Sbs4WGYy7IDDLQdSjqD5jyhOutteOwOFOOxajm1RTopYQeWnK9cDB0
+         hvE7ZWzVKRh2YzsssJB6Sqdg/ZB+AJ9BsQqBXEkxTPNXyi3w+h1dH0BcTsGPPlCOL5/+
+         g20Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=AgNfdkuh;
+       spf=pass (google.com: domain of va1470367@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=va1470367@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <va1470367@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id y26sor16764426eds.9.2020.07.13.07.38.04
+        for <harpuun1337@gmail.com>
+        (Google Transport Security);
+        Mon, 13 Jul 2020 07:38:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of va1470367@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=AgNfdkuh;
+       spf=pass (google.com: domain of va1470367@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=va1470367@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=onauiznV4EVDwp5kwjTEaV1+iwL5vMaMogy/HsLcNkk=;
+        b=AgNfdkuhQxvN3BzmjCn68YrVHc9R065gPk3iE0JKoAH1SaNCH8pkG8YYw/QCpc5MtB
+         1Xr7n/KBzfnPfLMPqaqI8FH5cj3Yih2eFf9RzoWsNK0BiUxOc8w96dnXGKrk7tqraIBP
+         qufCnW3tuIfxpXzKyGZwQTOeLhLpMG8dY5/MAAi0eZwVxwZ7UHlFZIwg6rWKku+HYPG/
+         te0wXBcNL6R2635eofi9zcODvxmoMciO/vvbd3paVzdtH+++EUJNUQd/Vgj9/E6J3Rj3
+         c3QJ9fUHFTCUFBVsAVuOgSJHfK+kRgHvqrSRjaBL9afDNBp4De4YqQrwsx9YGbOiqYi7
+         Qv5g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=onauiznV4EVDwp5kwjTEaV1+iwL5vMaMogy/HsLcNkk=;
+        b=XSMlkRWh5D+1tx44cimIaREBAxk9FBVs8GCb0O6/R868nbWykmJqpedE72TLcZmXuW
+         5eb75SDo/FhRH9UJpv8nvgEIxG0dQCHtNjJdBhGdwGHsgY2gc/cKu+DSlCf2flvvWlI6
+         oMP/A9Bjck5S9FwiuLMk8s22koU9fSLVqRX1gSEON4ME90DMGqE+pLnKcjt8n+YmaTuw
+         iR8sZrL094Dh+1yendqJ6Z0fmRwFbSZoFYkeCLDCdFwq3wzoJdEC1eAVxehaXCtem3qj
+         U/yJy9t8MwECDf7L1hBdfPkUxsjAGjDdonH7ZHmS7MW8ItSBdqfzjNzrSsuxxgixml/I
+         tT4Q==
+X-Gm-Message-State: AOAM532Sa8Th0ISJ2ETCyOgBCSF1f/2/yWEIvxaJhDBJzxlqpdtv6Bkd
+	YK92m5Gtgv1yU6j3YJkHlw+W3ij/emd6/F6GxCKN8Uc7
+X-Google-Smtp-Source: ABdhPJy5lHUVhydmw2aQ/Yxlsksp9yG1Fj7OMwjz6rysluLMRQzSJq8hAz5ceS7ouhGwJZ7mpZm9Q3U6FIn7/raN5zM=
+X-Received: by 2002:aa7:c657:: with SMTP id z23mr83584656edr.265.1594651083532;
+ Mon, 13 Jul 2020 07:38:03 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 2002:a17:906:5859:0:0:0:0 with HTTP; Mon, 13 Jul 2020 07:38:02
+ -0700 (PDT)
+In-Reply-To: <CAL3P7_u3zcCiYkYgFgD+W7pKT8XVeAkCYBNvciUd9dRj5WtVrA@mail.gmail.com>
+References: <CAL3P7_t8obBkop-1Pp7FUMs2VmoJZvitJm+38gcEeM+Ftw_i9A@mail.gmail.com>
+ <CAOZwkC3KY+G6rZo9SnqdHz-asDA27-ZU2yP_g54WKpov2aKb2g@mail.gmail.com>
+ <CAL3P7_spzmfK6VA4gidgW919REYBStZ=XUC3BLgtUGEX9gPGCw@mail.gmail.com>
+ <CAOZwkC09nfr=QD-KiWxHKmX+Lg6ZSjLw-c_hvvntZRXYuOEW1Q@mail.gmail.com> <CAL3P7_u3zcCiYkYgFgD+W7pKT8XVeAkCYBNvciUd9dRj5WtVrA@mail.gmail.com>
+From: "V.A" <va1470367@gmail.com>
+Date: Mon, 13 Jul 2020 15:38:02 +0100
+Message-ID: <CAL3P7_tEaMha+7CjcL-NGZNbf90vkayzWSECf6CV2yek0Jm4AQ@mail.gmail.com>
+Subject: Re: Please get back to me if you recieved this message
+To: Silver B <harpuun1337@gmail.com>
+Content-Type: text/plain; charset="UTF-8"
+
+And also I would not want to jeopardize this opportunity. Also i want
+you to bear one thing in mind, there is no risk involved and the
+transaction will be executed under a legitimate arrangement that will
+protect you and I from any breach of law, therefore assuring you it is
+100% secured as long as you are following my instructions at any
+giving time. I must let you know that this is not a hoax arrangement
+or any kind of joke. This is real and goes on in banks all over the
+world without people knowing. A lot of customers open private accounts
+with different banks and deposit valuable items without the knowledge
+of their families and when they die, such money will be lost to the
+bank, unless someone comes to claim it, and this is how a lot of bank
+directors make so much money silently. Also you must know that it is
+not always compulsory to have a relationship with person before you
+become the next of kin, let us utilize this opportunity because it
+does not come always. I shall take care of informations related to the
+account once the transfer is concluded. Therefore! the first step is
+to place your name as the Next of Kin to the account in our bank
+database so that all information will reflect accordingly. In this
+regard, you have to send me the following informations below;
+
+YOUR FULL NAMES.
+YOUR COUNTRY AND CITY.
+DATE OF BIRTH.
+A SCAN COPY OF YOUR ID.
+YOUR PROFESSION.
+YOUR OFFICE, HOME OR POSTAL ADDRESS.
+AND MOBILE PHONE NUMBERS.
+
+Once I receive these informations and conclude with all changes in the
+bank database, I shall quickly inform you what next to do
+
+Regards.
+
+On 7/13/20, V.A <va1470367@gmail.com> wrote:
+> Hello Silver,
+> There is nothing to be scared of in this,
+>
+> On 7/13/20, Silver B <harpuun1337@gmail.com> wrote:
+>> Hello
+>>
+>> Sorry, but I feel uncertain about this process.
+>>
+>>
+>>
+>> On Mon, 13 Jul 2020 at 17:26, V.A <va1470367@gmail.com> wrote:
+>>
+>>> Dear Sliver,
+>>>
+>>> I appreciate your response, I contacted you into this transaction and
+>>> I assure you will never regret it. Am a banker with one of the
+>>> consolidated banks here in republic of gold coast gana, and i want to
+>>> assure you as a banker that this is a legitimate transaction but all
+>>> that it requires is sincerity, commitment with trust from both of us
+>>> and that will make it an easy and fast transaction. Once again I
+>>> appreciate your response to my mail, I want you to know the source of
+>>> the fund  before we proceed. This is an abandoned money amount to
+>>> ($4.2 million) in our bank belonging to our deceased customer
+>>> Mr.Andreas Schranner a german nationality who died in a plane crash
+>>> years back with his entire family on their way to summer holiday,
+>>> Since his death, I have made all the whole investigation as the
+>>> account manager and I found out that the deceased have no other next
+>>> of kin apart from his family that died along with him on the plane
+>>> crash. Just last week my bank management requested that Mr.Andreas
+>>> Schranner should give instructions on what to do about his funds, I
+>>> know this will happen and that is why I have been looking for a means
+>>> to handle the situation, because if my bank directors happens to know
+>>> that  Mr.Andreas Schranneris dead and do not have beneficiary to the
+>>> account, they will take the funds for their personal use, so I don't
+>>> want such to happen.
+>>>
+>>> Based on our banking policy only a foreign person that has the right
+>>> to claim over the fund since it belongs to a foreigner, no indigene or
+>>>  person working in the bank can lay claim over the fund. This is why I
+>>> have contacted you for us to work together so I can present you as the
+>>> next of kin or business associate to the deceased customer and claim
+>>> the fund into your account as the next of kin to avoid its
+>>> confiscation or declaration as non serviceable by the bank. And once
+>>> the fund is transferred and confirmed into your account, you are
+>>> eligible for 50% of the total money and myself 50%, that is equal
+>>> among us because the cost to process the transfer of the fund into
+>>> your account was handled by both of us.
+>>>
+>>> Also i want you to know that all the secret file jacket of the late
+>>> customer is with me, once you assured me that you can stand as the
+>>> next of kin, I will work with you to see that the fund transferred
+>>> into your account without any delay, also I don't want my bank to know
+>>> my involvement in this transaction, it must remain secret for both of
+>>> us till the fund finally transferred into your own account as the next
+>>> of kin. Please kindly let me know if you are capable of handling this.
+>>>
+>>> I awaits your response before we proceed,
+>>>
+>>> Thank you.
+>>>
+>>> On 7/13/20, Silver B <harpuun1337@gmail.com> wrote:
+>>> > Please tell me more information.
+>>> >
+>>> >
+>>> >
+>>> > On Mon, 13 Jul 2020 at 04:52, V.A <va1470367@gmail.com> wrote:
+>>> >
+>>> >> Hello, thanks for taking your time to read my letter and I`m sorry to
+>>> >> encroach into your privacy in this manner, though we do not know in
+>>> >> person. However, it is an urgent need for a foreign partner that move
+>>> >> me to contact you. I have a business proposal to share with you which
+>>> >> will interest you and benefit both of us as well, thank you.
+>>> >>
+>>> >
+>>>
+>>>
+>>> --
+>>> Hello, thanks for taking your time to read my letter and I`m sorry to
+>>> encroach into your privacy in this manner, though we do not know in
+>>> person. However, it is an urgent need for a foreign partner that move
+>>> me to contact you. I have a business proposal to share with you which
+>>> will interest you and benefit both of us as well, thank you.
+>>>
+>>
+>
+>
+> --
+> Hello, thanks for taking your time to read my letter and I`m sorry to
+> encroach into your privacy in this manner, though we do not know in
+> person. However, it is an urgent need for a foreign partner that move
+> me to contact you. I have a business proposal to share with you which
+> will interest you and benefit both of us as well, thank you.
+>
+
+
+-- 
+Hello, thanks for taking your time to read my letter and I`m sorry to
+encroach into your privacy in this manner, though we do not know in
+person. However, it is an urgent need for a foreign partner that move
+me to contact you. I have a business proposal to share with you which
+will interest you and benefit both of us as well, thank you.
